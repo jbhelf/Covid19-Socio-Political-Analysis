@@ -6,8 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    dataLoc = "CovidData/" #Data folder address
-    
+    """US data paths"""
     usConf = "CovidData/time_series_covid19_confirmed_US.csv" #Path to US confirmed cases data
     usDeath = "CovidData/time_series_covid19_deaths_US.csv" #Path to US deaths data
 
@@ -15,12 +14,12 @@ if __name__ == "__main__":
 
     usCEQ = modelData(openUS(usConf))
 
-    """World data locations"""
+    """World data paths"""
     wConf = "CovidData/time_series_covid19_confirmed_global.csv" #Path to world confirmed cases data    
     wDeath = "CovidData/time_series_covid19_deaths_global.csv" #Path to world deaths data
     wRec = "CovidData/time_series_covid19_recovered_global.csv" #Path to world recovery data
     
-    """Socio-Political metrics"""
+    """Socio-Political metrics paths"""
     pop = "CovidData/WPP2019_TotalPopulationBySex.csv" #Path to world population data
     hdi = "CovidData/Human development index (HDI).csv" #Path to HDI data
 
