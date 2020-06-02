@@ -1,13 +1,13 @@
 # Covid-19 Response: Socio-Political Analysis
 
 ## In this folder you will find:
-Plots: A folder with the results of plotting data with various political metrics as filters
+**Plots**: A folder with the results of plotting data with various political metrics as filters
 
-CovidData: A folder with data used as political metrics for comparison
+**CovidData**: A folder with data used as political metrics for comparison
 
-updateFiles.sh: A shell file to pull the most recent data on Covid-19 confirmed cases and deaths
+**updateFiles.sh**: A shell file to pull the most recent data on Covid-19 confirmed cases and deaths
 
-#### Python Files:
+**Python Files**:
 - main: Coordinates all actions for analysis
 - assignDict: Manipulates data for the purposes of creating, modifying, and categorizing country-indexed dictionaries
 - detResponse: Performs a regression analysis on a given data set
