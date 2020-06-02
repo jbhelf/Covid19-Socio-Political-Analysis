@@ -5,11 +5,14 @@
 Provided in this directory is an analysis of Covid-19 data to determine the impact that three political metrics had in the response to the Covid-19 outbreak.
 
 ## In this folder you will find:
-**Plots**: A folder with the results of plotting data with various political metrics as filters
+**Plots**: 
+- A folder with the results of plotting data with various political metrics as filters
 
-**CovidData**: A folder with data used as political metrics for comparison
+**CovidData**: 
+- A folder with data used as political metrics for comparison
 
-**updateFiles.sh**: A shell file to pull the most recent data on Covid-19 confirmed cases and deaths
+**updateFiles.sh**: 
+- A shell file to pull the most recent data on Covid-19 confirmed cases and deaths
 
 **Python Files**:
 - main: Coordinates all actions for analysis
