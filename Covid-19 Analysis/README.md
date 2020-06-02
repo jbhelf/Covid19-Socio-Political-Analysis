@@ -1,5 +1,9 @@
 # Covid-19 Response: Socio-Political Analysis
 
+## Brief overview:
+
+Provided in this directory is an analysis of Covid-19 data to determine the impact that three political metrics had in the response to the Covid-19 outbreak.
+
 ## In this folder you will find:
 **Plots**: A folder with the results of plotting data with various political metrics as filters
 
