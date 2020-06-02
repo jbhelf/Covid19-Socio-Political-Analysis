@@ -15,11 +15,11 @@ Provided in this directory is an analysis of Covid-19 data to determine the impa
 - A shell file to pull the most recent data on Covid-19 confirmed cases and deaths
 
 **Python Files**:
-- main: Coordinates all actions for analysis
-- assignDict: Manipulates data for the purposes of creating, modifying, and categorizing country-indexed dictionaries
-- detResponse: Performs a regression analysis on a given data set
-- plotByCat: Plots dictionaries based on their categorizations
-- readFiles: Reads files from CovidData folder
+- **main**: Coordinates all actions for analysis
+- **assignDict**: Manipulates data for the purposes of creating, modifying, and categorizing country-indexed dictionaries
+- **detResponse**: Performs a regression analysis on a given data set
+- **plotByCat**: Plots dictionaries based on their categorizations
+- **readFiles**: Reads files from CovidData folder
 
 ### Data Sources:
 - Covid-19 Data (files kept with same names): https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
