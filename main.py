@@ -1,9 +1,7 @@
 from readFiles import *
 from detResponse import *
 from assignDict import *
-import math
-from sklearn.metrics import mean_squared_error, r2_score
-import matplotlib.pyplot as plt
+from plotByCat import *
 
 if __name__ == "__main__":
     #US data paths
@@ -44,8 +42,13 @@ if __name__ == "__main__":
 
     for i in dDat:
         if i in cDat:
-            prCou[i] = [cDat[i][0]+cDat[i][3], dDat[i][0]+dDat[i][3], 'l', 'l', 'l']
+            prCou[i] = [cDat[i][0]+cDat[i][3], dDat[i][0]+dDat[i][3], 'N', 'N', 'N']
+    
+    prCou["United States of America"][2] = 'H'
+    prCou["United States of America"][3] = 'H'
+    prCou["United States of America"][4] = 'H'
 
     dct = scalePresent(prCou, pop)
-    d = {}
-    determineCutoffs(d, hdi, pfi, edu)
+    dct = determineCutoffs(dct, hdi, pfi, edu)
+    
+    plotMetrics(dct) #plot data by category for each of 3 metrics

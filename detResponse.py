@@ -1,8 +1,6 @@
-import math
-from sklearn import linear_model
 import numpy as np
 from scipy.optimize import curve_fit
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 import random
 

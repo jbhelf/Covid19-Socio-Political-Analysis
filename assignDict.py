@@ -39,21 +39,51 @@ def determineCutoffs(dct, HDI, PFI, EDU):
     data = [float(i) for i in slc[1][:] if i != '..']
     hdiL, hdiH = cutoffHelper(data)
 
+    for i in range(len(slc[0][:])):
+        if slc[0][i] in dct:
+            if float(slc[1][i]) <= hdiL: #lower 3rd
+                c='L'
+            elif float(slc[1][i]) > hdiH: #middle 3rd
+                c='H'
+            else: #upper 3rd
+                c='M'
+            dct[slc[0][i]][2] = c
+
     """PFI Section"""
     raw = pd.read_csv(PFI)
     slc = [raw["Country Name"].values.tolist(), raw["2019"].values.tolist()]
     data = [float(i) for i in slc[1][:] if not np.isnan(i)]
     pfiL, pfiH = cutoffHelper(data)
 
+    for i in range(len(slc[0][:])):
+        if slc[0][i] in dct:
+            if float(slc[1][i]) < pfiL: #lower 3rd
+                c='H'
+            elif float(slc[1][i]) >= pfiH: #middle 3rd
+                c='L'
+            else: #upper 3rd
+                c='M'
+            dct[slc[0][i]][3] = c
+
     """EDU Section"""
     raw = pd.read_csv(EDU)
-    slc = [raw["Country"].values.tolist(), raw["Value"].values.tolist(), raw["Country"].values.tolist()]
-    edData = list()
+    slc = [raw["Country"].values.tolist(), raw["Value"].values.tolist()]
+    cLis = list()
     data = list()
     for i in range(len(slc[0][:])):
         if i+1 == len(slc[0][:]) or slc[0][i] != slc[0][i+1]: #if this is the lowermost (most recent) entry
-            edData.append([slc[0][i], slc[1][i]])
+            cLis.append(slc[0][i])
             data.append(slc[1][i])
     eduL, eduH = cutoffHelper(data)
-    
-    
+
+    for i in range(len(slc[0][:])):
+        if slc[0][i] in dct:
+            if float(slc[1][i]) <= eduL:  #lower 3rd
+                c='L'
+            elif float(slc[1][i]) > eduH:  #lower 3rd
+                c='H'
+            else: #upper 3rd
+                c='M'
+            dct[slc[0][i]][4] = c
+
+    return dct
