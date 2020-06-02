@@ -11,6 +11,3 @@ curl 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covi
 
 #Global death link
 curl 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv' > CovidData/time_series_covid19_deaths_global.csv
-
-#Global recovery link
-curl 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv' > CovidData/time_series_covid19_recovered_global.csv
