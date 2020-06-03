@@ -21,7 +21,7 @@ Provided in this directory is an analysis of Covid-19 data to determine the impa
 - **plotByCat**: Plots dictionaries based on their categorizations
 - **readFiles**: Reads files from CovidData folder
 
-**Covid-19 Breakdown**:
+**Covid-19 Breakdown.pdf**:
 - A detailed breakdown of the plots, giving a more in-depth explanation of the project
 
 ### Data Sources:
