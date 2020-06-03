@@ -22,8 +22,8 @@ Provided in this directory is an analysis of Covid-19 data to determine the impa
 - **readFiles**: Reads files from CovidData folder
 
 ### Data Sources:
-- Covid-19 Data (files kept with same names): https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
-- World Population Data: https://population.un.org/wpp/Download/Standard/CSV/
+- Covid-19 data (files kept with same names): https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
+- World Population data: https://population.un.org/wpp/Download/Standard/CSV/
 - Human Development Data (HDI): http://hdr.undp.org/en/data#
 - Press Freedom Index (PFI): https://tcdata360.worldbank.org/indicators/h3f86901f?indicator=32416&viz=line_chart&years=2001,2019
-- Education Level Data (Mean Years of Schooling): http://data.uis.unesco.org/index.aspx?queryid=242
+- Education Level data (Mean Years of Schooling): http://data.uis.unesco.org/index.aspx?queryid=242
