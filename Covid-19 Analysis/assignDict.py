@@ -20,12 +20,12 @@ def initDict(dct, path):
 
 def scalePresent(dct, path): #scaling all country data by population
     raw = pd.read_csv(path).values.tolist()
+    new = {}
     for i in range(len(raw)): #filtration
         if raw[i][3] == "Medium" and raw[i][4] == 2020 and raw[i][1] in dct:
-            dct[raw[i][1]][0] /= raw[i][8] #confirmed scaling
-            dct[raw[i][1]][1] /= raw[i][8] #death scaling
+            new[raw[i][1]] = [dct[raw[i][1]][0] / raw[i][8], dct[raw[i][1]][1] / raw[i][8], dct[raw[i][1]][2], dct[raw[i][1]][3], dct[raw[i][1]][4]] 
     
-    return dct
+    return new
     
 def cutoffHelper(data):
     low = np.percentile(data, 33.333)
