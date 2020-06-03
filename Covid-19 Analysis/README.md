@@ -21,6 +21,9 @@ Provided in this directory is an analysis of Covid-19 data to determine the impa
 - **plotByCat**: Plots dictionaries based on their categorizations
 - **readFiles**: Reads files from CovidData folder
 
+**Covid-19 Breakdown**:
+- A detailed breakdown of the plots, giving a more in-depth explanation of the project
+
 ### Data Sources:
 - Covid-19 data (files kept with same names): https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
 - World Population data: https://population.un.org/wpp/Download/Standard/CSV/
