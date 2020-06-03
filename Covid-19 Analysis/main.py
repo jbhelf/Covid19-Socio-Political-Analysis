@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     for i in dDat:
         if i in cDat:
-            prCou[i] = [cDat[i][0]+cDat[i][3], dDat[i][0]+dDat[i][3], 'N', 'N', 'N']
+            prCou[i] = [cDat[i][0], dDat[i][0], 'N', 'N', 'N']
     
     prCou["United States of America"][2] = 'H'
     prCou["United States of America"][3] = 'H'
