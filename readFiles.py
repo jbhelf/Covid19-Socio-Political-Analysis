@@ -1,8 +1,5 @@
 import pandas as pd
 
-def openPopdict(path, country):
-    return
-
 def openUS(path): #for US data
     raw = pd.read_csv(path)
     raw = raw.values.tolist() #convert data to list
@@ -15,7 +12,7 @@ def openUS(path): #for US data
             off = i
             break
 
-    sel = [None] * (len(raw[0]) - off)
+    sel = [None] * (col - off)
 
     for i in range(off, col):
         sum = 0
@@ -43,9 +40,11 @@ def openWorld(path, country):
     #now have the start and end rows of the sequence
     raw = raw.values.tolist() #convert data to list
 
-    sel = [None] * (len(raw[0]) - 4)
+    col = len(raw[0])
 
-    for i in range(4, len(raw[0])): #For each column
+    sel = [None] * (col - 4)
+
+    for i in range(4, col): #For each column
         sum = 0
         for j in range(row, endRow + 1): #For each row
             sum += raw[j][i]

@@ -52,3 +52,4 @@ if __name__ == "__main__":
     dct = determineCutoffs(dct, hdi, pfi, edu)
     
     plotMetrics(dct) #plot data by category for each of 3 metrics
+    #detDist(dct) #determine distance from origin

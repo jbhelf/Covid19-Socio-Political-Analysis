@@ -1,5 +1,21 @@
 import matplotlib.pyplot as plt
 
+def detDist(dct):
+    hDist = {'L':0, 'M':0, 'H':0, 'N':0} #cumulative hdi distances
+    pDist = {'L':0, 'M':0, 'H':0, 'N':0} #cumulative pfi distances
+    eDist = {'L':0, 'M':0, 'H':0, 'N':0} #cumulative education distances
+
+    for i in dct:
+        d = (dct[i][0] ** 2 + dct[i][0] ** 2) ** (1/2) #distance
+        hDist[dct[i][2]] += d
+        pDist[dct[i][3]] += d
+        eDist[dct[i][4]] += d
+    
+    print(hDist)
+    print(pDist)
+    print(eDist)
+        
+
 def plotMetrics(dct):
     low = dict()
     mid = dict()
@@ -30,5 +46,4 @@ def plotMetrics(dct):
             plt.title("Confirmed Cases vs. Deaths (Education)")
         plt.legend(handles=[g,o,r])
         plt.show()
-
-           
+         
