@@ -11,7 +11,7 @@ def detDist(l, m, h):
     for i in h:
         dist['H'] += math.sqrt(h[i][0] ** 2 + h[i][1] ** 2)
 
-    print(dist)  
+    #print(dist)  
         
 
 def plotMetrics(dct):
@@ -52,7 +52,7 @@ def plotMetrics(dct):
         plt.legend(handles=[g,o,r])
         mxC *= 10
         mxC = math.ceil(mxC + 1) #rounding
-        dr = 408000/7150000 #6/11/20 rough death rate percentage estimate (total deaths/total infected)
+        dr = 603697/14394056 #7/19/20 rough death rate percentage estimate (total deaths/total infected) from google
         plt.plot([i/10 for i in range(0,mxC,1)], [i*dr/10 for i in range(0,mxC,1)], color='blue')
         plt.show()
         detDist(low, mid, high)
