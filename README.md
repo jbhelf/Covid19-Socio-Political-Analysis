@@ -30,3 +30,4 @@ Provided in this directory is an analysis of Covid-19 data to determine the impa
 - Human Development Data (HDI): http://hdr.undp.org/en/data#
 - Press Freedom Index (PFI): https://tcdata360.worldbank.org/indicators/h3f86901f?indicator=32416&viz=line_chart&years=2001,2019
 - Education Level data (Mean Years of Schooling): http://data.uis.unesco.org/index.aspx?queryid=242
+-	Total infections and deaths (for death rate): https://news.google.com/covid19/map?hl=en-US&mid=/m/02j71&gl=US&ceid=US:en
